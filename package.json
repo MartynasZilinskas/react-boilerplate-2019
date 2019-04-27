@@ -1,0 +1,49 @@
+{
+    "name": "react-boilerplate-2019",
+    "description": "React boilerplate project with webpack.",
+    "private": true,
+    "scripts": {
+        "build": "webpack --config webpack.config.js",
+        "test": "tsc -p . --noEmit && tslint -p .",
+        "watch": "cross-env NODE_ENV=development webpack-dev-server --config webpack.config.js",
+        "build:prod": "cross-env NODE_ENV=production webpack --config webpack.config.js",
+        "serve:prod": "npm run build:prod && cross-env NODE_ENV=production webpack-dev-server --config webpack.config.js",
+        "start": "npm run watch"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/MartynasZilinskas/react-boilerplate-2019.git"
+    },
+    "author": "Martynas Žilinskas <martynas@quatrodev.com> (https://github.com/MartynasZilinskas)",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/MartynasZilinskas/react-boilerplate-2019/issues"
+    },
+    "homepage": "https://github.com/MartynasZilinskas/react-boilerplate-2019#readme",
+    "devDependencies": {
+        "@reactway/webpack-builder": "1.0.0-alpha.10",
+        "@reactway/webpack-builder-plugin-clean": "1.0.0-alpha.10",
+        "@reactway/webpack-builder-plugin-html": "1.0.0-alpha.10",
+        "@reactway/webpack-builder-plugin-images": "1.0.0-alpha.10",
+        "@reactway/webpack-builder-plugin-styles": "1.0.0-alpha.10",
+        "@reactway/webpack-builder-plugin-typescript": "1.0.0-alpha.10",
+        "@reactway/webpack-builder-plugin-web-dev": "1.0.0-alpha.10",
+        "@reactway/webpack-builder-plugin-write-file": "1.0.0-alpha.10",
+        "@types/react": "16.8.14",
+        "@types/react-dom": "16.8.4",
+        "cross-env": "5.2.0",
+        "node-sass": "^4.12.0",
+        "simplr-tslint": "1.0.0-alpha.14",
+        "tslint": "5.16.0",
+        "tslint-language-service": "0.9.9",
+        "typescript": "3.4.5",
+        "webpack": "4.29.6",
+        "webpack-cli": "3.3.0",
+        "webpack-dev-server": "3.3.1"
+    },
+    "dependencies": {
+        "react": "^16.8.6",
+        "react-dom": "^16.8.6",
+        "@babel/polyfill": "7.4.3"
+    }
+}

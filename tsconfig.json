@@ -19,14 +19,7 @@
             "@routing/*": ["src/routing/*"],
             "@utils/*": ["src/utils/*"],
             "@app/config": ["src/config.ts"]
-        },
-        "plugins": [
-            {
-                "name": "tslint-language-service",
-                "alwaysShowRuleFailuresAsWarnings": true,
-                "ignoreDefinitionFiles": true
-            }
-        ]
+        }
     },
     "exclude": ["node_modules", "dist"]
 }
